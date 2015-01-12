@@ -8,6 +8,7 @@
 
 #include "screen.h"
 #include <curses.h>
+#include <iostream>
 
 screen::screen(string title) {
 	this->title = title;
@@ -24,7 +25,7 @@ int screen::loop() {
 	refresh();
 	
 	while (true) {
-		key = getKey();
+		key = getch();
 		switch (key) {
 			case 'a':
 				return 0;

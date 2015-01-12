@@ -9,9 +9,9 @@
 #define _XOPEN_SOURCE_EXTENDED
 
 #include <locale.h>
+#include <thread>
 #include "screen.h"
 #include "menu.h"
-
 
 int main()
 {
